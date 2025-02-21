@@ -30,5 +30,5 @@ function saveNewUsername() {
     // Update the displayed username
     document.getElementById("profileUser").textContent = newUsername;
 
-    alert("Username updated successfully!");
+    alert("Username updated uccesss!");
 }
