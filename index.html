@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button onclick="handleLogin()">Login</button>
+    </div>
+</div>
+
+<!-- Display Username -->
+<div id="userDisplay">Guest</div>
+
+<button onclick="document.getElementById('loginModal').style.display='block'">
+    Login
+</button>
+
+    <!-- Profile Button -->
+<button id="profileButton">👤 Profile</button>
+
+<!-- Logout Button (Initially Hidden) -->
+<button id="logoutButton" style="display: none;">🚪 Logout</button>
+
+<!-- Profile Modal -->
+<div id="profileModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Edit Profile</h2>
+        <label>Niklupul:</label>
+        <input type="text" id="editUsername">
+        <button onclick="handleSaveProfile()">Save Changes</button>
+        <button onclick="closeModal('profileModal')">Close</button>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
